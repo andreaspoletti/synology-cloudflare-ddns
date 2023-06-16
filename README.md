@@ -15,6 +15,7 @@ Before using this script, make sure that:
 - You have a Cloudflare account and have access to your API key.
 - `curl` and `jq` are installed on your Synology NAS.
 - Your domain name is managed by Cloudflare, and you have the permissions to modify its DNS records.
+- Synology DDNS client is installed on your Synology NAS (more info on this in the [Installation](#installation) section).
 
 ## Usage
 
@@ -38,6 +39,7 @@ The script uses the following exit codes:
 - `1` - Prerequisites are missing or parameters are invalid.
 - `2` - The hostname format is invalid.
 - `3` - Authentication failed.
+- `4` - Prerequisites are missing.
 
 ## Limitations
 
