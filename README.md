@@ -46,6 +46,7 @@ The script uses the following exit codes:
 The script currently makes separate API calls for updating the A and AAAA records. As of the time of writing this README, Cloudflare does not support batch updates for DNS records.
 
 ## Installation
+
 In order to install this script, please follow the instructions in the [INSTALLATION.md](INSTALLATION.md) file.
 
 ## Contribution
@@ -55,6 +56,12 @@ Contributions are welcome. Please feel free to submit a pull request or open an 
 ## Disclaimer
 
 This script is provided as is with no warranty. Please use it at your own risk and ensure you understand what the script does before running it.
+
+## Inspiration
+
+The following projects were used as inspiration for this script:
+- [SynologyDDNSCloudflareMultidomain](https://github.com/mrikirill/SynologyDDNSCloudflareMultidomain)
+- [SynologyCloudflareDDNS](https://github.com/joshuaavalon/SynologyCloudflareDDNS)
 
 ## License
 
