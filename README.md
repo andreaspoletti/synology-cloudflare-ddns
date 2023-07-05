@@ -22,13 +22,13 @@ Before using this script, make sure that:
 Use the following command to run the script:
 
 ```bash
-/sbin/cloudflare_ddns.sh <username> <password> <hostname> <ip>
+/sbin/cloudflare_ddns.sh <username> <token> <hostname> <ip>
 ```
 
 Where:
 
 - `<username>` is your Cloudflare account ID.
-- `<password>` is your Cloudflare API key.
+- `<token>` is your Cloudflare API key.
 - `<hostname>` is the hostname you want to update, for example, `example.com`.
 - `<ip>` is the IP address to set. This is optional and if not specified, the script will automatically detect the external IP address of your NAS.
 
@@ -40,10 +40,6 @@ The script uses the following exit codes:
 - `2` - The hostname format is invalid.
 - `3` - Authentication failed.
 - `4` - Prerequisites are missing.
-
-## Limitations
-
-The script currently makes separate API calls for updating the A and AAAA records. As of the time of writing this README, Cloudflare does not support batch updates for DNS records.
 
 ## Installation
 
